@@ -1,0 +1,13 @@
+CREATE TABLE users (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ name TEXT,
+ email TEXT UNIQUE,
+ password TEXT
+);
+
+CREATE TABLE tasks (
+ id INTEGER PRIMARY KEY AUTOINCREMENT,
+ user_id INTEGER,
+ title TEXT,
+ description TEXT
+);
